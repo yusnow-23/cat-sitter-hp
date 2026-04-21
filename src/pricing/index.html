@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>料金プラン | にゃんステイ - 猫専用ペットホテル</title>
+    <meta
+      name="description"
+      content="にゃんステイの料金プランをご紹介。1泊2日10,000円から。料金シミュレーションで合計金額をその場で確認。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+  </head>
+  <body>
+    <header class="header js-header">
+      <div class="header-inner">
+        <div class="logo"><a href="/">🐾 にゃんステイ</a></div>
+        <nav class="global-nav">
+          <ul>
+            <li><a href="/service/">サービス内容</a></li>
+            <li><a href="/pricing/">料金プラン</a></li>
+            <li><a href="/flow/">ご利用の流れ</a></li>
+            <li><a href="/faq/">よくある質問</a></li>
+            <li>
+              <a href="/contact/" class="btn-contact">ご予約・お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="hamburger js-hamburger" aria-label="メニューを開閉">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1 class="page-title">料金プラン</h1>
+      </section>
+
+      <!-- Basic Pricing -->
+      <section class="pricing-basic">
+        <h2 class="section-title fade-in">基本料金（猫1匹あたり）</h2>
+        <div class="pricing-table-wrapper fade-in">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>プラン</th>
+                <th>料金（税込）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1泊2日</td>
+                <td class="price">¥10,000</td>
+              </tr>
+              <tr>
+                <td>2泊3日</td>
+                <td class="price">¥17,000</td>
+              </tr>
+              <tr>
+                <td>3泊4日</td>
+                <td class="price">¥25,000</td>
+              </tr>
+              <tr>
+                <td>4泊5日</td>
+                <td class="price">¥32,000</td>
+              </tr>
+              <tr>
+                <td>5泊6日</td>
+                <td class="price">¥38,000</td>
+              </tr>
+              <tr>
+                <td>6泊7日</td>
+                <td class="price">¥43,000</td>
+              </tr>
+              <tr>
+                <td>7泊8日</td>
+                <td class="price">¥47,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Additional Pricing -->
+      <section class="pricing-additional">
+        <h2 class="section-title fade-in">追加料金</h2>
+        <div class="additional-card fade-in">
+          <div class="additional-item">
+            <span class="additional-label">2匹目以降追加料金</span>
+            <span class="additional-price"
+              >1泊につき <strong>+¥6,000</strong></span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Price Calculator -->
+      <section class="pricing-simulator">
+        <h2 class="section-title fade-in">料金シミュレーション</h2>
+        <div class="simulator-card fade-in" id="price-calculator">
+          <div class="simulator-inputs">
+            <div class="simulator-field">
+              <label for="nights-select">宿泊プラン</label>
+              <select id="nights-select">
+                <option value="1">1泊2日</option>
+                <option value="2">2泊3日</option>
+                <option value="3">3泊4日</option>
+                <option value="4">4泊5日</option>
+                <option value="5">5泊6日</option>
+                <option value="6">6泊7日</option>
+                <option value="7">7泊8日</option>
+              </select>
+            </div>
+            <div class="simulator-field">
+              <label for="cats-select">猫ちゃんの数</label>
+              <select id="cats-select">
+                <option value="1">1匹</option>
+                <option value="2">2匹</option>
+                <option value="3">3匹</option>
+              </select>
+            </div>
+          </div>
+          <div class="simulator-result">
+            <span class="result-label">合計金額（税込）</span>
+            <span class="result-price" id="total-price">¥10,000</span>
+          </div>
+          <p class="simulator-note">※有料オプションは含まれておりません</p>
+        </div>
+      </section>
+
+      <div class="section-cta fade-in">
+        <a href="/contact/" class="btn-primary">ご予約・お問い合わせ</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">🐾 にゃんステイ</div>
+        <ul class="footer-nav">
+          <li><a href="/service/">サービス内容</a></li>
+          <li><a href="/pricing/">料金プラン</a></li>
+          <li><a href="/flow/">ご利用の流れ</a></li>
+          <li><a href="/faq/">よくある質問</a></li>
+          <li><a href="/contact/">お問い合わせ・予約</a></li>
+        </ul>
+        <div class="footer-sns">
+          <a href="#" aria-label="LINE">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 5.81 2 10.5c0 3.77 3.06 6.97 7.2 7.85.28.06.66.18.76.42.09.22.06.56.03.78l-.12.74c-.04.22-.16.86.76.47.91-.39 4.93-2.9 6.73-4.97C19.22 13.69 22 12.2 22 10.5 22 5.81 17.52 2 12 2z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2C5.6 4 4 5.6 4 7.6v8.8C4 18.4 5.6 20 7.6 20h8.8c2 0 3.6-1.6 3.6-3.6V7.6C20 5.6 18.4 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 にゃんステイ All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/ts/main.ts"></script>
+  </body>
+</html>

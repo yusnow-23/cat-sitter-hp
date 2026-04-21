@@ -1,0 +1,56 @@
+:root {
+  /* Colors - Design System */
+  --color-white: #ffffff;
+  --color-ivory: #fdf8f3;
+  --color-brown-warm: #8b6f47;
+  --color-beige-soft: #d4a574;
+  --color-brown-dark: #3e2c1c;
+  --color-brown-medium: #7a6855;
+  --color-brown-light: #c4a882;
+  --color-ivory-dark: #f5ede3;
+
+  /* Typography */
+  --font-family-title: "Zen Maru Gothic", "Kosugi Maru", sans-serif;
+  --font-family-body: "Noto Sans JP", sans-serif;
+
+  /* Font Sizes */
+  --fs-hero: 48px;
+  --fs-h1: 36px;
+  --fs-h2: 32px;
+  --fs-h3: 22px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+  --fs-cta: 17px;
+
+  /* Layout */
+  --max-width: 1200px;
+  --spacing-section: 100px;
+  --header-height: 70px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 20px rgba(62, 44, 28, 0.06);
+  --shadow-card-hover: 0 8px 30px rgba(62, 44, 28, 0.12);
+  --shadow-header: 0 2px 12px rgba(62, 44, 28, 0.06);
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 50px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --spacing-section: 60px;
+    --fs-hero: 32px;
+    --fs-h1: 28px;
+    --fs-h2: 24px;
+    --fs-h3: 18px;
+    --header-height: 60px;
+  }
+}
