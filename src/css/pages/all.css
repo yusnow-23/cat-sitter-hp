@@ -177,8 +177,8 @@
 }
 
 .service-card-icon {
-  width: 56px;
-  height: 56px;
+  width: 96px;
+  height: 96px;
   margin: 0 auto 20px;
   color: var(--color-brown-warm);
 }
@@ -186,6 +186,13 @@
 .service-card-icon svg {
   width: 100%;
   height: 100%;
+}
+
+.service-card-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
 }
 
 .service-card h3 {
@@ -877,8 +884,8 @@
   }
 
   .service-card-icon {
-    width: 44px;
-    height: 44px;
+    width: 80px;
+    height: 80px;
   }
 
   .simulator-inputs {
